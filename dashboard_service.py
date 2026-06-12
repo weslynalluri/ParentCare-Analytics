@@ -2,7 +2,7 @@ import pandas as pd
 
 
 df = pd.read_csv(
-        "data/ParentCare_Final_Dataset.csv"
+        "ParentCare_Final_Dataset.csv"
     )
 def get_risk_distribution():
 
