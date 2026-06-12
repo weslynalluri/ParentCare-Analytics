@@ -11,21 +11,21 @@
 #     }
 from fastapi import FastAPI
 
-from app.dashboard_service import get_dashboard_summary
+from dashboard_service import get_dashboard_summary
 
-from app.models import ChildAssessmentRequest
+from models import ChildAssessmentRequest
 
-from app.wellness_engine import assess_child
+from wellness_engine import assess_child
 
-from app.recommendation_engine import generate_recommendations
+from recommendation_engine import generate_recommendations
 
-from app.dashboard_service import get_risk_distribution
+from dashboard_service import get_risk_distribution
 
-from app.dashboard_service import get_age_group_analysis
+from dashboard_service import get_age_group_analysis
 
-from app.dashboard_service import get_wellness_distribution
+from dashboard_service import get_wellness_distribution
 
-from app.dashboard_service import get_health_concerns
+from dashboard_service import get_health_concerns
 
 app = FastAPI(
     title="ParentCare Analytics API",
