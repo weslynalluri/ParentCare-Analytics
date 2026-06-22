@@ -2,17 +2,19 @@
 
 def get_age_group(age):
 
-    if age <= 10:
+    if 8 <= age <= 10:
         return "8-10"
 
-    elif age <= 13:
+    elif 11 <= age <= 13:
         return "11-13"
 
-    elif age <= 16:
+    elif 14 <= age <= 16:
         return "14-16"
 
-    else:
+    elif 17 <= age <= 18:
         return "17-18"
+
+    raise ValueError("Invalid age")
 
 
 # ----------------------------------
