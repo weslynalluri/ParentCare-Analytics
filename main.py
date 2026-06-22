@@ -130,7 +130,8 @@ def assess(request: ChildAssessmentRequest):
 )
 def age_group_analysis():
 
-    return get_age_group_analysis()
+    result = get_age_group_analysis()
+    return result
 
 
 @app.get(
